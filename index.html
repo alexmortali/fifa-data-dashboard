@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FIFA Data Dashboard</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+
+    <script type="text/javascript" src="static/js/d3.min.js"></script>
+    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="static/js/dc.min.js"></script>
+    <script type="text/javascript" src="static/js/queue.min.js"></script>
+    <script type="text/javascript" src="static/js/graph.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-left">
+        <div class="text-center" id="sidebar-header">
+            <a href="index.html"><img class="nav-image" src="assets/images/ea-sports-logo-image.png"></a>
+            <h4>FIFA DATA DASHBOARD</h4>
+        </div>
+        <div class="sidebar-selection-section">
+            <div class="sidebar-element">
+                <h4>Select Team</h4>
+                <div id="team-selector"></div>
+            </div>
+            <div class="sidebar-element">
+                <h4>Select Country</h4>
+                <div id="country-selector"></div>
+            </div>
+            <div class="sidebar-element">
+                <h4>Select Player</h4>
+                <div id="player-selector"></div>
+            </div>
+            <!--Reset graphs button-->
+            <a href="javascript: dc.filterAll(); dc.redrawAll();">
+                <div id="reset-button">
+                    <a href="javascript: dc.filterAll(); dc.redrawAll();"><button class="btn" id="reset-all">Reset All</button></a>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
