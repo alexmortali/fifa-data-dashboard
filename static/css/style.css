@@ -1,0 +1,43 @@
+/*----------------------------------------- Sidebar */
+.navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: #939393;
+}
+
+.nav-image {
+    height: 75%;
+    width: 75%;
+    margin-top: 30px;
+}
+
+#sidebar-header {
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+}
+
+.sidebar-element {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    font-size: 1.1em;
+}
+
+.dc-select-menu {
+    width: 220px;
+}
+
+#reset-button {
+    margin-left: 15px;
+    padding: 0;
+}
+
+#reset-all {
+    width: 220px;
+    height: 60px;
+    background-color: #d72519;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-radius: 15px;
+}
