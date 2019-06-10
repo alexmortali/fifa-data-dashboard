@@ -89,7 +89,7 @@ function show_score_per_position(ndx) {
 
     dc.barChart("#score-to-position-chart")
         .width(1300)
-        .height(500)
+        .height(470)
         .margins({ top: 50, right: 0, bottom: 50, left: 50 })
         .dimension(dim)
         .group(averageScoreByPosition)
@@ -113,11 +113,17 @@ function show_preferred_foot_pie_chart(ndx) {
     var total_per_foot = foot_dim.group();
 
     dc.pieChart('#preferred-foot-chart')
-        .height(330)
-        .radius(90)
+        .height(350)
+        .radius(110)
         .transitionDuration(1500)
         .dimension(foot_dim)
-        .group(total_per_foot);
+        .group(total_per_foot)
+        .legend(dc.legend().x(1).y(40).itemHeight(13).gap(5))
+        .renderLabel(false)
+        .ordinalColors([
+            "#0f4357",
+            "#3fb1de"
+        ]);
 }
 
 // Body Type Pie Chart
@@ -126,11 +132,18 @@ function show_body_type_pie_chart(ndx) {
     var total_per_body_type = body_type_dim.group();
     
     dc.pieChart('#body-type-chart')
-        .height(330)
-        .radius(90)
+        .height(350)
+        .radius(110)
         .transitionDuration(1500)
         .dimension(body_type_dim)
-        .group(total_per_body_type);
+        .group(total_per_body_type)
+        .legend(dc.legend().x(1).y(40).itemHeight(13).gap(5))
+        .renderLabel(false)
+        .ordinalColors([
+            "#0f4357",
+            "#3fb1de",
+            "#a8dcf0"
+        ]);
 }
 
 // Work Rate Pie Chart
@@ -139,10 +152,21 @@ function show_work_rate_pie_chart(ndx) {
     var total_per_work_rate = work_rate_dim.group();
     
     dc.pieChart('#work-rate-chart')
-        .height(330)
-        .radius(90)
+        .height(350)
+        .radius(110)
         .transitionDuration(1500)
         .dimension(work_rate_dim)
-        .group(total_per_work_rate);
+        .group(total_per_work_rate)
+        .legend(dc.legend().x(0).y(40).itemHeight(13).gap(5))
+        .renderLabel(false)
+        .ordinalColors([
+            "#061b23",
+            "#0f4357",
+            "#186b8c",
+            "#2193c0",
+            "#3fb1de",
+            "#73c7e7",
+            "#a8dcf0"
+        ]);
 }
 
