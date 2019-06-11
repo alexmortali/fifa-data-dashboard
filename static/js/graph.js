@@ -7,6 +7,7 @@ function makeGraphs(error, playerData) {
 
     playerData.forEach(function(d) {
         d.overall = parseInt(d.overall);
+        d.wage = parseInt(d.wage);
     });
 
     show_team_selector(ndx);
@@ -18,6 +19,8 @@ function makeGraphs(error, playerData) {
     show_preferred_foot_pie_chart(ndx);
     show_body_type_pie_chart(ndx);
     show_work_rate_pie_chart(ndx);
+    
+    show_salary_per_position(ndx);
 
     dc.renderAll();
 }
@@ -89,7 +92,7 @@ function show_score_per_position(ndx) {
 
     dc.barChart("#score-to-position-chart")
         .width(1300)
-        .height(470)
+        .height(500)
         .margins({ top: 50, right: 0, bottom: 50, left: 50 })
         .dimension(dim)
         .group(averageScoreByPosition)
@@ -118,7 +121,7 @@ function show_preferred_foot_pie_chart(ndx) {
         .transitionDuration(1500)
         .dimension(foot_dim)
         .group(total_per_foot)
-        .legend(dc.legend().x(1).y(40).itemHeight(13).gap(5))
+        .legend(dc.legend().x(1).y(30).itemHeight(13).gap(5))
         .renderLabel(false)
         .ordinalColors([
             "#0f4357",
@@ -137,7 +140,7 @@ function show_body_type_pie_chart(ndx) {
         .transitionDuration(1500)
         .dimension(body_type_dim)
         .group(total_per_body_type)
-        .legend(dc.legend().x(1).y(40).itemHeight(13).gap(5))
+        .legend(dc.legend().x(1).y(30).itemHeight(13).gap(5))
         .renderLabel(false)
         .ordinalColors([
             "#0f4357",
@@ -157,7 +160,7 @@ function show_work_rate_pie_chart(ndx) {
         .transitionDuration(1500)
         .dimension(work_rate_dim)
         .group(total_per_work_rate)
-        .legend(dc.legend().x(0).y(40).itemHeight(13).gap(5))
+        .legend(dc.legend().x(0).y(30).itemHeight(13).gap(5))
         .renderLabel(false)
         .ordinalColors([
             "#061b23",
@@ -170,3 +173,51 @@ function show_work_rate_pie_chart(ndx) {
         ]);
 }
 
+// Average salary for each position bar chart with a custom reducer that will calculate the average salary for each position.
+function show_salary_per_position(ndx) {
+
+    var dim = ndx.dimension(dc.pluck('Position'));
+
+    function add_item(p, v) {
+        p.count++;
+        p.total += v.wage;
+        p.average = p.total / p.count;
+        return p;
+    }
+
+    function remove_item(p, v) {
+        p.count--;
+        if (p.count == 0) {
+            p.total = 0;
+            p.average = 0;
+        }
+        else {
+            p.total -= v.wage;
+            p.average = p.total / p.count;
+        }
+        return p;
+    }
+
+    function initialise() { 
+        return { count: 0, total: 0, average: 0 };
+    }
+
+    var averageSalaryByPosition = dim.group().reduce(add_item, remove_item, initialise);
+
+    dc.barChart("#salary-bar-chart")
+        .width(1300)
+        .height(500)
+        .margins({ top: 50, right: 0, bottom: 50, left: 50 })
+        .dimension(dim)
+        .group(averageSalaryByPosition)
+        .valueAccessor(function(d) {
+            return d.value.average.toFixed(2);
+        })
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Position")
+        .yAxisLabel("Salary (K per Week)")
+        .yAxis().ticks(15);
+}
