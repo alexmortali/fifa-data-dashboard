@@ -55,6 +55,7 @@ body {
     padding-top: 30px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin-left: 250px;
 }
 
 #score-to-position-chart {
@@ -64,7 +65,7 @@ body {
 .pie-charts-container {
     background-color: #f2f2f2;
     margin-top: 500px;
-    height: 500px;
+    height: 400px;
 }
 
 .pie-chart-heading h2 {
@@ -81,4 +82,8 @@ body {
 
 #work-rate-chart {
     margin-right: -30px;
+}
+
+#salary-bar-chart {
+    margin-left: 400px;
 }
