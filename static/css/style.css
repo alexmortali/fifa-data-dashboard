@@ -4,6 +4,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+
 /*----------------------------------------- Sidebar */
 .navbar {
     width: 250px;
@@ -49,7 +50,8 @@ body {
     border-radius: 15px;
 }
 
-/*----------------------------------------- Headings */
+
+/*----------------------------------------- Headings + Special Classes*/
 .section-heading {
     margin: 0;
     padding-top: 30px;
@@ -58,12 +60,19 @@ body {
     margin-left: 250px;
 }
 
+.darker-section {
+    background-color: #f2f2f2;
+}
+
+
+/*----------------------------------------- Score To Position*/
 #score-to-position-chart {
     margin-left: 400px;
 }
 
+
+/*----------------------------------------- Pie Charts Section*/
 .pie-charts-container {
-    background-color: #f2f2f2;
     margin-top: 500px;
     height: 400px;
 }
@@ -86,4 +95,10 @@ body {
 
 #salary-bar-chart {
     margin-left: 400px;
+}
+
+
+/*----------------------------------------- Who's Number One*/
+.number-one-container {
+    margin-top: 530px;
 }
