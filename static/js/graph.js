@@ -91,8 +91,8 @@ function show_score_per_position(ndx) {
     var averageScoreByPosition = dim.group().reduce(add_item, remove_item, initialise);
 
     dc.barChart("#score-to-position-chart")
-        .width(1300)
-        .height(500)
+        .width(1200)
+        .height(450)
         .margins({ top: 50, right: 0, bottom: 50, left: 50 })
         .dimension(dim)
         .group(averageScoreByPosition)
@@ -205,8 +205,8 @@ function show_salary_per_position(ndx) {
     var averageSalaryByPosition = dim.group().reduce(add_item, remove_item, initialise);
 
     dc.barChart("#salary-bar-chart")
-        .width(1300)
-        .height(500)
+        .width(1200)
+        .height(450)
         .margins({ top: 50, right: 0, bottom: 50, left: 50 })
         .dimension(dim)
         .group(averageSalaryByPosition)

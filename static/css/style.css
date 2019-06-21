@@ -62,13 +62,15 @@ body {
 
 .darker-section {
     background-color: #f2f2f2;
+    width: 100%;
+}
+
+.bar-chart-margin {
+    margin-left: 450px;
 }
 
 
-/*----------------------------------------- Score To Position*/
-#score-to-position-chart {
-    margin-left: 400px;
-}
+/*----------------------------------------- Score To Position Bar Chart*/
 
 
 /*----------------------------------------- Pie Charts Section*/
@@ -83,6 +85,7 @@ body {
     margin-bottom: 0;
     margin-top: 40px;
     letter-spacing: 1px;
+    font-weight: 300;
 }
 
 #offence-defence {
@@ -93,9 +96,8 @@ body {
     margin-right: -30px;
 }
 
-#salary-bar-chart {
-    margin-left: 400px;
-}
+
+/*----------------------------------------- Salary to Position Bar Chart*/
 
 
 /*----------------------------------------- Who's Number One*/
