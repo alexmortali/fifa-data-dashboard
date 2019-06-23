@@ -2,10 +2,12 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #f2f2f2;
 }
 
 
 /*----------------------------------------- Sidebar */
+
 .navbar {
     width: 250px;
     height: 100vh;
@@ -52,6 +54,7 @@ body {
 
 
 /*----------------------------------------- Headings + Special Classes*/
+
 .section-heading {
     margin: 0;
     padding-top: 30px;
@@ -60,22 +63,27 @@ body {
     margin-left: 250px;
 }
 
-.darker-section {
-    background-color: #f2f2f2;
-    width: 100%;
+.lighter-section {
+    background-color: #fff;
 }
 
 .bar-chart-margin {
     margin-left: 450px;
 }
 
+.overall-score-chart-container, .pie-charts-container, .salary-chart-container, .number-one-container {
+    overflow: auto;
+}
+
 
 /*----------------------------------------- Score To Position Bar Chart*/
-
+.overall-score-chart-container {
+    height: 600px;
+}
 
 /*----------------------------------------- Pie Charts Section*/
+
 .pie-charts-container {
-    margin-top: 500px;
     height: 400px;
 }
 
@@ -92,21 +100,19 @@ body {
     font-size: 50%;
 }
 
-#work-rate-chart {
-    margin-right: -30px;
-}
-
 
 /*----------------------------------------- Salary to Position Bar Chart*/
-
+.salary-chart-container {
+    height: 630px;
+}
 
 /*----------------------------------------- Who's Number One*/
-.number-one-container {
-    margin-top: 530px;
-}
 
-.messi-image {
-}
+/*.number-one-container {
+    margin-top: 530px;
+}*/
+
+.messi-image {}
 
 .statistics-container {
     display: block;
@@ -125,7 +131,7 @@ body {
     font-weight: 300;
 }
 
-.border-line { 
+.border-line {
     margin: 45px 0;
     height: 1px;
     background: black;
@@ -133,5 +139,24 @@ body {
 }
 
 
+/*----------------------------------------- Media Queries */
 
+@media (max-width: 1440px) {
+    .bar-chart-margin {
+        margin-left: 260px;
+    }
+    
+    .pie-charts-container {
+        height: 450px;
+    }
+    
+    .pie-chart-heading {
+        padding: 0;
+    }
+}
 
+@media (max-width: 1025px) {
+    .messi-image {
+        visibility: hidden;
+    }
+}
