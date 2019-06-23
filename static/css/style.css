@@ -84,7 +84,7 @@ body {
 /*----------------------------------------- Pie Charts Section*/
 
 .pie-charts-container {
-    height: 400px;
+    height: 425px;
 }
 
 .pie-chart-heading h2 {
@@ -107,10 +107,6 @@ body {
 }
 
 /*----------------------------------------- Who's Number One*/
-
-/*.number-one-container {
-    margin-top: 530px;
-}*/
 
 .messi-image {}
 
@@ -144,10 +140,6 @@ body {
 @media (max-width: 1440px) {
     .bar-chart-margin {
         margin-left: 260px;
-    }
-    
-    .pie-charts-container {
-        height: 450px;
     }
     
     .pie-chart-heading {
