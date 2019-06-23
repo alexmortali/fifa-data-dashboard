@@ -7,27 +7,63 @@ The website serves to provide enterainment, facts and comparisons for Fifa and f
 It includes 3 filters where users can filter the data by Team, Country and Player name. Two bar charts comparing 
 position to overall score and position to weekly salary. Three pie charts showing players preferred foot, work rate and body type.
 Finally the last section reveals the number one player on fifa.
-# DEMO  
 
+
+# DEMO  
+A live demo can be found at - https://alexmortali.github.io/fifa-data-dashboard/
 
 # UX  
+The website is a single page dashboard. It's layout consists of a fixed sidebar on the left hand side which provides filters and a reset button to the users. It then has the main content on the right
+featuring various graphs showing the data.  
+The focus of the layout of the dashboard is to keep it simple and easy to interact with the data. This is done by using a neutral colour scheme, a simple layout where each area  is clearly distinguished from the next
+using a different background colour. The layout also makes sure that the pie charts and one of the bar charts are all in view at the same time, this makes the interface easier to interact with as user don't have to 
+excessively scroll to see the charts change. 
 
+COLOUR PALLET:
+The main consideration for the colour pallet was to keep it neutral. For the graphs the colours used are all shades of blue. This allows the different sections of the pie charts to be distinguished from each 
+other but not any section being overpowering. It also matches the blue in the ea sports logo. For the only button on the dashboard red is used as this looks good against the blue but also stands out against it. Red is
+also an alarming colour which is important as the button is a 'reset all' button, the red is also the same red from the ea sports logo.  
+
+For the font 'Roboto' is used throughout the site. It is a clear and simple font that is easy to read and does not distract interupt the users interaction with the dashboard.
+
+USER STORIES:
+    - I would like to filter the data so I can see all the players from a single country.
+    - I would like to filter the data so I can the statistics of one specific player.
+    - I would like to filter the data so I can the salary of the players from a specific team.
 
 # FEATURES  
-The site features a relitevly minimalist design with a fixed side navbar. The minimalist design gives each graph some negative space around it, this makes the data easy to digest and easier to compare.
-It includes 3 filters where users can filter the data by Team, Country and Player name. 
-Two bar charts comparing position to overall score and position to weekly salary. 
-Three pie charts showing players preferred foot, work rate and body type.
-A section reveals the number one player on fifa.
-All of the charts are interactive so users can really specify there seaach and visually see certain sections of the data, such as a countrys statistics.
+The site features a relitevly minimalist design with a fixed side navbar. The minimalist design gives each graph some negative space around it, this makes the data easy to digest and easier to compare.  
+
+The dashboard includes:
+    - Team Selector: This allows users to filter the data to show players from a specific team.
+    - Country Selector: This allows users to filter the data to show players from a specific Country.
+    - Player Selector: This allows users to filter the data to show a specific player.
+    - Reset All button: This allows users to reset all filters and selections made and take the data back to the default state.  
+    
+    CHARTS
+    - Position to Score Bar Chart: This allows users to view the average overscore from each position.
+    - Position to Salary Bar Chart: This allows users to view the average salary from each position.
+    - Preferred Foot Pie Chart: This allows users to see the number of players which prefer left or right foot based on the filters they have chosen. 
+      It will also show what foot a player is if the user has filtered down to a single player.
+    - Body Type Pie Chart: This allows users to see the body types of players based on the filters they have chosen. 
+      It will also show the body type of a player if the user has filtered down to a single player.
+    - Work Rate Pie Chart: This allows users to see the work rates of players based on the filters they have chosen. 
+      It will also show the work rate of a player if the user has filtered down to a single player.  
+      
+All of the charts are interactive so users can really specify there seaach and visually see certain sections of the data, such as a specific countrys statistics.
 
 # FEATURES LEFT TO IMPLEMENT  
-
+    - A pop up module showing an individual players stats.
 
 # TECHNOLOGIES USED  
 1 - HTML: This project uses HTML as the skeleton of the website.  
 2 - CSS: This project uses CSS to control the presentation of the website.  
 3 - Bootstrap(3.3.7): This project uses Bootstrap as it's framework to make the site responsive.
+4 - JavaScript: This project uses JavaScript to make the site interactive.
+5 - DC js: This project uses dcjs to create the charts.
+6 - D3 js: This project uses d3js to render each of the dynamic, interactive charts.
+7 - crossfilter js: This project uses crossfilter js to allow dynamic interaction between all the charts.
+8 - Queue js: This project uses queue js to allow the data to load first.
 
 
 # TESTING  
@@ -37,8 +73,8 @@ All of the charts are interactive so users can really specify there seaach and v
 
 
 # CREDITS:   
-CONTENT - 
+CONTENT - The data was taken from https://www.kaggle.com/karangadiya/fifa19. It has been edited slightly to remove blanks, typos and some of the rows.
 
-MEDIA - Messi photo -> https://mundoalbiceleste.com/2018/09/24/lionel-messi-fifa-best-argentina-coach/
+MEDIA - The image of Messi pwas taken from https://mundoalbiceleste.com/2018/09/24/lionel-messi-fifa-best-argentina-coach/
 
-ACKNOWLEDGEMENTS - 
+ACKNOWLEDGEMENTS - Border line was taken from http://jsfiddle.net/ZTz7Q/
