@@ -19,6 +19,13 @@
 </head>
 
 <body>
+
+    <section class="hidden-md hidden-lg hidden-xl">
+        <div class="alert alert-danger info-banner text-center" role="alert">
+            <p href="#" class="alert-link" data-toggle='modal' data-target='#infoModal'><i>More Info</i></p>
+        </div>
+    </section>
+
     <!-- SideBar -->
     <nav class="navbar navbar-default navbar-fixed-left">
         <div class="text-center" id="sidebar-header">
@@ -47,14 +54,14 @@
         </div>
     </nav>
     <!-- /SideBar -->
-    
+
     <!-- Overall Score Bar Chart -->
     <section class="overall-score-chart-container lighter-section">
         <h1 class="text-center section-heading">What Position Ranks The Highest?</h1>
         <div class="bar-chart-margin" id="score-to-position-chart"></div>
     </section>
     <!-- /Overall Score Bar Chart -->
-    
+
     <!-- Pie Charts Section -->
     <section class="pie-charts-container darker-section container-fluid">
         <div class="row">
@@ -73,14 +80,14 @@
         </div>
     </section>
     <!-- /Pie Charts Section -->
-    
+
     <!-- Salary Bar Chart -->
     <section class="salary-chart-container lighter-section">
         <h1 class="text-center section-heading">How Much Does Each Position Earn?</h1>
         <div class="bar-chart-margin" id="salary-bar-chart"></div>
     </section>
     <!-- /Salary Bar Chart -->
-    
+
     <!-- Whos Number One Section -->
     <section class="hidden-xs number-one-container darker-section container-fluid">
         <h1 class="text-center section-heading number-one-heading">Who's Number One?</h1>
@@ -98,6 +105,24 @@
         </div>
     </section>
     <!-- /Whos Number One Section -->
+
+    <!-- Information Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="infoModalLabel">FIFA Data Dashboard</h4>
+                </div>
+                <div class="modal-body">
+                    <p><i>For the best experience please use either a laptop or deskptop to view this website.<br>
+                    If you are using a mobile or tablet device please turn it sideways to maximize the width of the device.<br>
+                    This will ensure you the best experience possible.</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Information Modal -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

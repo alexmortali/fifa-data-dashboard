@@ -5,6 +5,25 @@ body {
     background-color: #f2f2f2;
 }
 
+/*----------------------------------------- Pop Up Modal */
+.info-banner {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    background-color: #d72519;
+    opacity: 0.9;
+}
+
+.info-banner p {
+    color: #fff!important;
+}
+
+
+.info-banner p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 /*----------------------------------------- Sidebar */
 
@@ -152,3 +171,11 @@ body {
         visibility: hidden;
     }
 }
+
+@media (max-width: 767px) {
+    .pie-charts-container {
+        margin-left: 250px;
+        overflow: visible;
+    }
+}
+
