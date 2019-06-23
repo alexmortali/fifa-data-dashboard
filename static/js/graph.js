@@ -92,8 +92,8 @@ function show_score_per_position(ndx) {
 
     dc.barChart("#score-to-position-chart")
         .width(1200)
-        .height(450)
-        .margins({ top: 50, right: 0, bottom: 50, left: 50 })
+        .height(500)
+        .margins({ top: 50, right: 0, bottom: 50, left: 30 })
         .dimension(dim)
         .group(averageScoreByPosition)
         .valueAccessor(function(d) {
@@ -206,8 +206,8 @@ function show_salary_per_position(ndx) {
 
     dc.barChart("#salary-bar-chart")
         .width(1200)
-        .height(450)
-        .margins({ top: 50, right: 0, bottom: 50, left: 50 })
+        .height(500)
+        .margins({ top: 50, right: 0, bottom: 50, left: 30 })
         .dimension(dim)
         .group(averageSalaryByPosition)
         .valueAccessor(function(d) {
