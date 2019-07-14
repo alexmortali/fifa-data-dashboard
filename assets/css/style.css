@@ -18,15 +18,12 @@ body {
     color: #fff!important;
 }
 
-
 .info-banner p:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-
 /*----------------------------------------- Sidebar */
-
 .navbar {
     width: 250px;
     height: 100vh;
@@ -71,9 +68,7 @@ body {
     border-radius: 15px;
 }
 
-
 /*----------------------------------------- Headings + Special Classes*/
-
 .section-heading {
     margin: 0;
     padding-top: 30px;
@@ -94,14 +89,12 @@ body {
     overflow: auto;
 }
 
-
 /*----------------------------------------- Score To Position Bar Chart*/
 .overall-score-chart-container {
     height: 600px;
 }
 
 /*----------------------------------------- Pie Charts Section*/
-
 .pie-charts-container {
     height: 425px;
 }
@@ -119,16 +112,12 @@ body {
     font-size: 50%;
 }
 
-
 /*----------------------------------------- Salary to Position Bar Chart*/
 .salary-chart-container {
     height: 630px;
 }
 
 /*----------------------------------------- Who's Number One*/
-
-.messi-image {}
-
 .statistics-container {
     display: block;
     position: absolute;
@@ -153,9 +142,7 @@ body {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(#f2f2f2), to(#f2f2f2), color-stop(50%, #3fb1de));
 }
 
-
 /*----------------------------------------- Media Queries */
-
 @media (max-width: 1440px) {
     .bar-chart-margin {
         margin-left: 260px;
@@ -178,4 +165,3 @@ body {
         overflow: visible;
     }
 }
-
