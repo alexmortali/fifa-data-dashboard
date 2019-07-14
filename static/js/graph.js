@@ -104,7 +104,7 @@ function show_score_per_position(ndx) {
         .xUnits(dc.units.ordinal)
         .elasticY(true)
         .xAxisLabel("Position")
-        .yAxisLabel("Score")
+        .yAxisLabel("Score out of 100")
         .yAxis().ticks(15);
 }
 
