@@ -15,11 +15,11 @@ function makeGraphs(error, playerData) {
     show_player_selector(ndx);
 
     show_score_per_position(ndx);
-    
+
     show_preferred_foot_pie_chart(ndx);
     show_body_type_pie_chart(ndx);
     show_work_rate_pie_chart(ndx);
-    
+
     show_salary_per_position(ndx);
 
     dc.renderAll();
@@ -63,8 +63,8 @@ function show_player_selector(ndx) {
 function show_score_per_position(ndx) {
     var dim = ndx.dimension(dc.pluck('Position'));
 
-    function add_item(p, v) {               // p is an accumulator that keeps track of the total, the count and the average. 
-        p.count++;                          // v represents each of the data items being added or removed.
+    function add_item(p, v) { // p is an accumulator that keeps track of the total, the count and the average. 
+        p.count++; // v represents each of the data items being added or removed.
         p.total += v.overall;
         p.average = p.total / p.count;
         return p;
@@ -75,15 +75,14 @@ function show_score_per_position(ndx) {
         if (p.count == 0) {
             p.total = 0;
             p.average = 0;
-        }
-        else {
+        } else {
             p.total -= v.overall;
             p.average = p.total / p.count;
         }
         return p;
     }
 
-    function initialise() { 
+    function initialise() {
         return { count: 0, total: 0, average: 0 };
     }
 
@@ -132,7 +131,7 @@ function show_preferred_foot_pie_chart(ndx) {
 function show_body_type_pie_chart(ndx) {
     var body_type_dim = ndx.dimension(dc.pluck('Body Type'));
     var total_per_body_type = body_type_dim.group();
-    
+
     dc.pieChart('#body-type-chart')
         .height(350)
         .radius(110)
@@ -152,7 +151,7 @@ function show_body_type_pie_chart(ndx) {
 function show_work_rate_pie_chart(ndx) {
     var work_rate_dim = ndx.dimension(dc.pluck('Work Rate'));
     var total_per_work_rate = work_rate_dim.group();
-    
+
     dc.pieChart('#work-rate-chart')
         .height(350)
         .radius(110)
@@ -188,15 +187,14 @@ function show_salary_per_position(ndx) {
         if (p.count == 0) {
             p.total = 0;
             p.average = 0;
-        }
-        else {
+        } else {
             p.total -= v.wage;
             p.average = p.total / p.count;
         }
         return p;
     }
 
-    function initialise() { 
+    function initialise() {
         return { count: 0, total: 0, average: 0 };
     }
 
