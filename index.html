@@ -21,7 +21,7 @@
 <body>
 
     <section class="hidden-md hidden-lg hidden-xl">
-        <div class="alert alert-danger info-banner text-center" role="alert">
+        <div class="alert alert-danger text-center" id="info-banner" role="alert">
             <p href="#" class="alert-link" data-toggle='modal' data-target='#infoModal'><i>More Info</i></p>
         </div>
     </section>
@@ -32,7 +32,7 @@
             <a href="index.html"><img class="nav-image" src="assets/images/ea-sports-logo-image.png"></a>
             <h4>FIFA DATA DASHBOARD</h4>
         </div>
-        <div class="sidebar-selection-section">
+        <div>
             <div class="sidebar-element">
                 <h4>Select Team</h4>
                 <div id="team-selector"></div>
@@ -56,24 +56,24 @@
     <!-- /SideBar -->
 
     <!-- Overall Score Bar Chart -->
-    <section class="overall-score-chart-container lighter-section">
+    <section class="lighter-section" id="overall-score-chart-container">
         <h1 class="text-center section-heading">What Position Ranks The Highest?</h1>
         <div class="bar-chart-margin" id="score-to-position-chart"></div>
     </section>
     <!-- /Overall Score Bar Chart -->
 
     <!-- Pie Charts Section -->
-    <section class="pie-charts-container darker-section container-fluid">
+    <section class="darker-section container-fluid" id="pie-charts-container">
         <div class="row">
-            <div class="col-xs-12 col-md-3 col-md-offset-3 preferred-foot pie-chart-heading">
+            <div class="col-xs-12 col-md-3 col-md-offset-3 pie-chart-heading">
                 <h2>Preferred Foot</h2>
                 <div id="preferred-foot-chart"></div>
             </div>
-            <div class="col-xs-12 col-md-3 body-type pie-chart-heading">
+            <div class="col-xs-12 col-md-3 pie-chart-heading">
                 <h2>Body Type</h2>
                 <div id="body-type-chart"></div>
             </div>
-            <div class="col-xs-12 col-md-3 work-rate pie-chart-heading">
+            <div class="col-xs-12 col-md-3 pie-chart-heading">
                 <h2>Work Rate <span id="offence-defence">Offence/Defence</span></h2>
                 <div id="work-rate-chart"></div>
             </div>
@@ -82,20 +82,20 @@
     <!-- /Pie Charts Section -->
 
     <!-- Salary Bar Chart -->
-    <section class="salary-chart-container lighter-section">
+    <section class="lighter-section" id="salary-chart-container">
         <h1 class="text-center section-heading">How Much Does Each Position Earn?</h1>
         <div class="bar-chart-margin" id="salary-bar-chart"></div>
     </section>
     <!-- /Salary Bar Chart -->
 
     <!-- Whos Number One Section -->
-    <section class="hidden-xs number-one-container darker-section container-fluid">
-        <h1 class="text-center section-heading number-one-heading">Who's Number One?</h1>
+    <section class="hidden-xs darker-section container-fluid" id="number-one-container">
+        <h1 class="text-center section-heading" id="number-one-heading">Who's Number One?</h1>
         <div class="row">
             <div class="hidden-sm col-md-3 col-md-offset-2">
-                <img src="assets/images/messi-image.png" class="messi-image">
+                <img src="assets/images/messi-image.png" id="messi-image">
             </div>
-            <div class="col-sm-7 col-sm-offset-5 col-md-4 col-md-offset-7 statistics-container">
+            <div class="col-sm-7 col-sm-offset-5 col-md-4 col-md-offset-7" id="statistics-container">
                 <h3 class="player-stat-text text-center">Lionel Messi</h3>
                 <div class="border-line"></div>
                 <h3 class="player-stat-text text-center">FC Barcelona</h3>

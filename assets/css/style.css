@@ -6,7 +6,7 @@ body {
 }
 
 /*----------------------------------------- Pop Up Modal */
-.info-banner {
+#info-banner {
     border: none;
     border-radius: 0;
     margin: 0;
@@ -14,11 +14,11 @@ body {
     opacity: 0.9;
 }
 
-.info-banner p {
+#info-banner p {
     color: #fff!important;
 }
 
-.info-banner p:hover {
+#info-banner p:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -85,21 +85,21 @@ body {
     margin-left: 450px;
 }
 
-.overall-score-chart-container, .pie-charts-container, .salary-chart-container, .number-one-container {
+#overall-score-chart-container, #pie-charts-container, #salary-chart-container, #number-one-container {
     overflow: auto;
 }
 
 /*----------------------------------------- Score To Position Bar Chart*/
-.overall-score-chart-container {
+#overall-score-chart-container {
     height: 600px;
 }
 
 /*----------------------------------------- Pie Charts Section*/
-.pie-charts-container {
+#pie-charts-container {
     height: 425px;
 }
 
-.pie-chart-heading h2 {
+#pie-chart-heading h2 {
     text-transform: uppercase;
     font-size: 190%;
     margin-bottom: 0;
@@ -113,18 +113,18 @@ body {
 }
 
 /*----------------------------------------- Salary to Position Bar Chart*/
-.salary-chart-container {
+#salary-chart-container {
     height: 630px;
 }
 
 /*----------------------------------------- Who's Number One*/
-.statistics-container {
+#statistics-container {
     display: block;
     position: absolute;
     margin-top: 125px;
 }
 
-.number-one-heading {
+#number-one-heading {
     margin-bottom: 50px;
 }
 
@@ -154,13 +154,13 @@ body {
 }
 
 @media (max-width: 1025px) {
-    .messi-image {
+    #messi-image {
         visibility: hidden;
     }
 }
 
 @media (max-width: 767px) {
-    .pie-charts-container {
+    #pie-charts-container {
         margin-left: 250px;
         overflow: visible;
     }
