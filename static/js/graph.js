@@ -61,7 +61,6 @@ function show_player_selector(ndx) {
 
 // Average overall core for each position bar-chart with a custom reducer that will calculate the average overall score for each position.
 function show_score_per_position(ndx) {
-
     var dim = ndx.dimension(dc.pluck('Position'));
 
     function add_item(p, v) {               // p is an accumulator that keeps track of the total, the count and the average. 
@@ -175,7 +174,6 @@ function show_work_rate_pie_chart(ndx) {
 
 // Average salary for each position bar chart with a custom reducer that will calculate the average salary for each position.
 function show_salary_per_position(ndx) {
-
     var dim = ndx.dimension(dc.pluck('Position'));
 
     function add_item(p, v) {
