@@ -6,6 +6,7 @@ body {
 }
 
 /*----------------------------------------- Pop Up Modal */
+
 #info-banner {
     border: none;
     border-radius: 0;
@@ -24,6 +25,7 @@ body {
 }
 
 /*----------------------------------------- Sidebar */
+
 .navbar {
     width: 250px;
     height: 100vh;
@@ -69,6 +71,7 @@ body {
 }
 
 /*----------------------------------------- Headings + Special Classes*/
+
 .section-heading {
     margin: 0;
     padding-top: 30px;
@@ -85,16 +88,21 @@ body {
     margin-left: 450px;
 }
 
-#overall-score-chart-container, #pie-charts-container, #salary-chart-container, #number-one-container {
+#overall-score-chart-container,
+#pie-charts-container,
+#salary-chart-container,
+#number-one-container {
     overflow: auto;
 }
 
 /*----------------------------------------- Score To Position Bar Chart*/
+
 #overall-score-chart-container {
     height: 600px;
 }
 
 /*----------------------------------------- Pie Charts Section*/
+
 #pie-charts-container {
     height: 425px;
 }
@@ -113,11 +121,13 @@ body {
 }
 
 /*----------------------------------------- Salary to Position Bar Chart*/
+
 #salary-chart-container {
     height: 630px;
 }
 
 /*----------------------------------------- Who's Number One*/
+
 #statistics-container {
     display: block;
     position: absolute;
@@ -143,11 +153,12 @@ body {
 }
 
 /*----------------------------------------- Media Queries */
+
 @media (max-width: 1440px) {
     .bar-chart-margin {
         margin-left: 260px;
     }
-    
+
     .pie-chart-heading {
         padding: 0;
     }
@@ -159,9 +170,33 @@ body {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    .section-heading {
+        margin-left: 10px;
+    }
+
+    #overall-score-chart-container, #salary-chart-container {
+        height: 700px;
+    }
+
     #pie-charts-container {
-        margin-left: 250px;
-        overflow: visible;
+        margin-left: 10px;
+        height: 1250px;
+    }
+
+    .bar-chart-margin {
+        margin-left: 10px;
+    }
+
+    #statistics-container {
+        margin-left: 17px;
+        padding-bottom: 60px;
+        margin-top: 20px;
+    }
+
+    #number-one-heading {
+        margin-left: -20px;
+        font-size: 1.7em;
+        margin-bottom: 25px;
     }
 }
