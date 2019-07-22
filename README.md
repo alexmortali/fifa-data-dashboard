@@ -13,24 +13,40 @@ Finally the last section reveals the number one player on fifa.
 A live demo can be found [here](https://alexmortali.github.io/fifa-data-dashboard/)
 
 # UX  
+
+##### Wireframes  
+Both Wireframes can be found [here.](https://github.com/alexmortali/fifa-data-dashboard/tree/master/Wireframes) 
+
 The website is desktop first and is a single page dashboard. It's layout consists of a fixed sidebar on the left hand side which provides filters and a reset button to the users. It then has the main content on the right
 featuring various graphs showing the data.
 
+##### Focus
 The focus of the layout of the dashboard is to keep it simple so users can easily interact with the data. This is done by using a neutral colour scheme, a simple layout where each area  is clearly distinguished from the next
 using a different background colour. The layout also makes sure that the pie charts and one of the bar charts are all in view at the same time, this makes the interface easier to interact with as user don't have to 
 excessively scroll to see the charts change. 
 
-COLOUR PALLET:  
+##### Users 
+The users of the website will be people who play Fifa or are football fans and want to look at and compare the data of football players.
+
+##### What Can They Do
+Users can view and interact with data through the various graphs. The data includes players positions, teams, nationalities, work rate, body type, preffered foot and salary. All this data allows users to filter the data 
+in many different ways.
+
+##### User Stories  
+  - I would like to filter the data so I can see all the players from a single country.  
+  - I would like to filter the data so I can see the statistics of one specific player.  
+  - I would like to filter the data so I can see the salary of the players from a specific team. 
+
+##### Colour Pallet  
 The main consideration for the colour pallet was to keep it neutral. For the graphs the colours used are all shades of blue. This allows the different sections of the pie charts to be distinguished from each 
-other but not any section being overpowering. It also matches the blue in the ea sports logo. For the only button on the dashboard red is used as this looks good against the blue but also stands out against it. Red is
-also an alarming colour which is important as the button is a 'reset all' button, the red is also the same red from the ea sports logo.  
+other but not any section being overpowering. It also matches the blue in the ea sports logo.  
 
-For the font 'Roboto' is used throughout the site. It is a clear and simple font that is easy to read and does not distract interupt the users interaction with the dashboard.
+For the only button on the dashboard red is used as this looks good against the blue but also stands out against it. Red is an alarming colour which is important as the button is a 'reset all' button, 
+the red is also the same red from the ea sports logo.  
 
-USER STORIES:  
-    - I would like to filter the data so I can see all the players from a single country.  
-    - I would like to filter the data so I can see the statistics of one specific player.  
-    - I would like to filter the data so I can see the salary of the players from a specific team.  
+##### Typography
+For the font 'Roboto' is used throughout the site. It is a clear and simple font that is easy to read and does not interupt the users interaction with the dashboard. A soft black is also used 
+for the font accross the site, keeping it consistent and easy to read.
 
 # FEATURES  
 The site features a relitevly minimalist design with a fixed side navbar. The minimalist design gives each graph some negative space around it, this makes the data easy to digest and easier to compare.  
