@@ -97,13 +97,13 @@ In the future I would like to add a pop up modal if a user has narrowed there se
  - EA Sports Logo Refreshes the page.  
  - Team Selector filters data correctly.
  - Country Selector filters data correctly.
- - Player Selector filters dara correctly.
+ - Player Selector filters data correctly.
  - Using mulitple filters at once filters data correctly.
  - Reset button removes all filters and resets graphs to default.
 
 #### Graphs
  - All Graphs and Charts react to interaction and applied filters from sidebar.
- - All Graphs and Charts use overflow: auto for smaller screen sizes and this work correctly.
+ - All Graphs and Charts use overflow: auto for smaller screen sizes and this works correctly.
  - There was some issues with the data displaying blank cells. For example for the player position, there would be one bar with no label because there was a group of players 
 with a blank cell for this position. To fix this I simply deleted these rows from the data.
 
@@ -117,6 +117,9 @@ This was resolved by hiding the side bar and putting each of the pie charts on t
 makes the website easy to use on mobile and tablet devices.
 
 # Deployement  
+This project was developed using [AWS Cloud9.](https://aws.amazon.com/cloud9/) [Git](https://git-scm.com/) was used for version control and backup. The project was then pushed to a remote 
+repository on [GitHub.](https://github.com/alexmortali/fifa-data-dashboard) From there the GitHub repository was then pushed to GitHub Pages which can be found [here.](https://alexmortali.github.io/fifa-data-dashboard/)
+
 The site is deployed directly from the master branch and is hosted using GitHub pages. The landing page is correctly named index.html in order for the site to work correctly.
 
 # Credits   
