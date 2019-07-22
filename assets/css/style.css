@@ -6,6 +6,10 @@ body {
 }
 
 /*----------------------------------------- Pop Up Modal */
+#more-info-button {
+    border: none;
+    background-color: transparent;
+}
 
 #info-banner {
     border: none;
