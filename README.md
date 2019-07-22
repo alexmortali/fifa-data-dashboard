@@ -85,22 +85,36 @@ In the future I would like to add a pop up modal if a user has narrowed there se
 
 
 # Testing  
-When testing the website on various screen sizes it became obvious the graphs do not work well with smaller devices. To counter this and encourage users to use a bigger device I have hidden certain features.
-On mobile and tablet devices the sidebar is hidden therefore users cannot filter the data by team, country or player. There is however a pop up modal explaining this and ecouraging users to use a bigger device.
 
-All of the graphs and features of the graphs were tested manually after each section was developed. This was done clicking on various sections of the graphs and applying different filters to see if the graphs reacted correctly. 
-There were never any issues with this. There was some issues however with the data displaying blank cells. For example for the player position, at the start there would be one bar with no label because there was a group of players 
+### Tests Conducted 
+- HTML Code was put through [W3 HTML Validator](https://validator.w3.org/) which reported missing alt tags from both images and have both been added.  
+- CSS Code was put through [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) which reported no problems.  
+- JS Code was put through [Esprima: Syntax Validator](https://esprima.org/demo/validate.html) with no reported problems.  
+- The site was tested on Chrome and Safari on multiple devices including iPhone 7, iPad, laptop and desktop.  
+
+### Manual Tests
+#### SideBar  
+ - EA Sports Logo Refreshes the page.  
+ - Team Selector filters data correctly.
+ - Country Selector filters data correctly.
+ - Player Selector filters dara correctly.
+ - Using mulitple filters at once filters data correctly.
+ - Reset button removes all filters and resets graphs to default.
+
+#### Graphs
+ - All Graphs and Charts react to interaction and applied filters from sidebar.
+ - All Graphs and Charts use overflow: auto for smaller screen sizes and this work correctly.
+ - There was some issues with the data displaying blank cells. For example for the player position, there would be one bar with no label because there was a group of players 
 with a blank cell for this position. To fix this I simply deleted these rows from the data.
 
-The reset all button was tested manually by filtering the data then clicking it, it worked accordingly from the start. The EA Sports logo being a link to refresh the page was tested manually and worked accordingly also.
+### Mobile Testing  
+Although this website is created for laptops and desktops great care was taken to make it functional on smaller screen sizes. 
+When testing the website on smaller screen sizes it became obvious the graphs do not work well with smaller devices. To counter this and encourage users to use a bigger device I have hidden certain features.
+On mobile and tablet devices the sidebar is hidden therefore users cannot filter the data by team, country or player. There is however an added pop up modal explaining this and ecouraging users to use a bigger device.
 
-The site was tested on Chrome and Safari on multiple devices including iPhone 7, iPad, laptop and desktop. On mobile it was clear the original layout didn't work, there was a lot of overflow and it looked messy. 
-This was resolved by hiding the side bar and putting each of the pie charts on the own line and extending the container height. This new layout makes the website easy to use on mobile and tablet devices.
-
-HTML Code was put through [W3 HTML Validator](https://validator.w3.org/) which reported missing alt tags from both images and have both been added.  
-CSS Code was put through [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) which reported no problems.  
-JS Code was put through [Esprima: Syntax Validator](https://esprima.org/demo/validate.html) with no reported problems.  
-
+On mobile it was clear the original layout didn't work, there was a lot of overflow,  it looked messy and was difficult to use. 
+This was resolved by hiding the side bar and putting each of the pie charts on the own line and extending the container height. This new layout gives the site a better flow and 
+makes the website easy to use on mobile and tablet devices.
 
 # Deployement  
 The site is deployed directly from the master branch and is hosted using GitHub pages. The landing page is correctly named index.html in order for the site to work correctly.
