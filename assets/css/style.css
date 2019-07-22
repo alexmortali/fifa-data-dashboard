@@ -72,6 +72,12 @@ body {
     color: #ffffff;
     font-size: 1.2em;
     border-radius: 15px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#reset-button, a:hover {
+    text-decoration: none;
 }
 
 /*----------------------------------------- Headings + Special Classes*/
