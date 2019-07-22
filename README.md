@@ -35,12 +35,12 @@ USER STORIES:
 The site features a relitevly minimalist design with a fixed side navbar. The minimalist design gives each graph some negative space around it, this makes the data easy to digest and easier to compare.  
 
 The dashboard includes:  
-    - Team Selector: This allows users to filter the data to show players from a specific team.
-    - Country Selector: This allows users to filter the data to show players from a specific Country.
-    - Player Selector: This allows users to filter the data to show a specific player.
-    - Reset All button: This allows users to reset all filters and selections made and take the data back to the default state.  
+    - Team Selector: This allows users to filter the data to show players from a specific team.  
+    - Country Selector: This allows users to filter the data to show players from a specific Country.  
+    - Player Selector: This allows users to filter the data to show a specific player.  
+    - Reset All button: This allows users to reset all filters and selections made and take the data back to the default state.    
     
-    CHARTS  
+  CHARTS  
     - Position to Score Bar Chart: This allows users to view the average overscore from each position.
     - Position to Salary Bar Chart: This allows users to view the average salary from each position.
     - Preferred Foot Pie Chart: This allows users to see the number of players which prefer left or right foot. 
@@ -58,12 +58,12 @@ All of the charts are interactive so users can really specify there seaach and v
 # TECHNOLOGIES USED  
 1 - HTML: This project uses HTML as the skeleton of the website.  
 2 - CSS: This project uses CSS to control the presentation of the website.  
-3 - Bootstrap(3.3.7): This project uses Bootstrap as it's framework to make the site responsive.
-4 - JavaScript: This project uses JavaScript to make the site interactive.
-5 - DC js: This project uses dcjs to create the charts.
-6 - D3 js: This project uses d3js to render each of the dynamic, interactive charts.
-7 - Crossfilter js: This project uses crossfilter js to allow dynamic interaction between all the charts.
-8 - Queue js: This project uses queue js to allow the data to load first.
+3 - Bootstrap(3.3.7): This project uses Bootstrap as it's framework to make the site responsive.  
+4 - JavaScript: This project uses JavaScript to make the site interactive.  
+5 - DC js: This project uses dcjs to create the charts.  
+6 - D3 js: This project uses d3js to render each of the dynamic, interactive charts.  
+7 - Crossfilter js: This project uses crossfilter js to allow dynamic interaction between all the charts.  
+8 - Queue js: This project uses queue js to allow the data to load first.  
 
 
 # TESTING  
@@ -79,7 +79,7 @@ The reset all button was tested manually by filtering the data then clicking it,
 The site was tested on Chrome and Safari on multiple devices including iPhone 7, iPad, laptop and desktop. On mobile it was clear the original layout didn't work, there was a lot of overflow and it looked messy. 
 This was resolved by hiding the side bar and putting each of the pie charts on the own line and extending the container height. This new layout makes the website easy to use on mobile and tablet devices.
 
-HTML Code was put through [W3 HTML Validator] (https://validator.w3.org/) which reported missing alt tags from both images and have both been added.
+HTML Code was put through [W3 HTML Validator](https://validator.w3.org/) which reported missing alt tags from both images and have both been added.
 CSS Code was put through W3 CSS Validator which reported no problems. - https://jigsaw.w3.org/css-validator/
 JS Code was put through Esprima: Syntax Validator with no reported problems. - https://esprima.org/demo/validate.html
 
@@ -90,6 +90,6 @@ The site is deployed directly from the master branch and is hosted using GitHub 
 # CREDITS:   
 CONTENT - The data was taken from https://www.kaggle.com/karangadiya/fifa19. It has been edited slightly to remove blanks, typos and some of the rows. All content throughout the site was written by me.
 
-MEDIA - The image of Messi pwas taken from https://mundoalbiceleste.com/2018/09/24/lionel-messi-fifa-best-argentina-coach/
+MEDIA - The image of Messi was taken from https://mundoalbiceleste.com/2018/09/24/lionel-messi-fifa-best-argentina-coach/
 
 ACKNOWLEDGEMENTS - Border line was taken from http://jsfiddle.net/ZTz7Q/
