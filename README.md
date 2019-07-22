@@ -10,7 +10,7 @@ Finally the last section reveals the number one player on fifa.
 
 
 # DEMO  
-A live demo can be found at - https://alexmortali.github.io/fifa-data-dashboard/
+A live demo can be found [here](https://alexmortali.github.io/fifa-data-dashboard/)
 
 # UX  
 The website is desktop first and is a single page dashboard. It's layout consists of a fixed sidebar on the left hand side which provides filters and a reset button to the users. It then has the main content on the right
@@ -41,29 +41,29 @@ The dashboard includes:
     - Reset All button: This allows users to reset all filters and selections made and take the data back to the default state.    
     
   CHARTS  
-    - Position to Score Bar Chart: This allows users to view the average overscore from each position.
-    - Position to Salary Bar Chart: This allows users to view the average salary from each position.
-    - Preferred Foot Pie Chart: This allows users to see the number of players which prefer left or right foot. 
-      It will also show what foot a player is if the user has filtered down to a single player.
-    - Body Type Pie Chart: This allows users to see the body types of players based on the filters they have chosen. 
-      It will also show the body type of a player if the user has filtered down to a single player.
+    - Position to Score Bar Chart: This allows users to view the average overscore from each position.  
+    - Position to Salary Bar Chart: This allows users to view the average salary from each position.  
+    - Preferred Foot Pie Chart: This allows users to see the number of players which prefer left or right foot.   
+      It will also show what foot a player is if the user has filtered down to a single player.  
+    - Body Type Pie Chart: This allows users to see the body types of players based on the filters they have chosen.   
+      It will also show the body type of a player if the user has filtered down to a single player.  
     - Work Rate Pie Chart: This allows users to see the work rates of players based on the filters they have chosen. 
       It will also show the work rate of a player if the user has filtered down to a single player.  
       
 All of the charts are interactive so users can really specify there seaach and visually see certain sections of the data, such as a specific countrys statistics.
 
 # FEATURES LEFT TO IMPLEMENT  
-    - A pop up module showing an individual players stats.
+In the future I would like to add a pop up modal if a user has narrowed there search to single player. It would show more of that players stats.
 
 # TECHNOLOGIES USED  
-1 - HTML: This project uses HTML as the skeleton of the website.  
-2 - CSS: This project uses CSS to control the presentation of the website.  
-3 - Bootstrap(3.3.7): This project uses Bootstrap as it's framework to make the site responsive.  
-4 - JavaScript: This project uses JavaScript to make the site interactive.  
-5 - DC js: This project uses dcjs to create the charts.  
-6 - D3 js: This project uses d3js to render each of the dynamic, interactive charts.  
-7 - Crossfilter js: This project uses crossfilter js to allow dynamic interaction between all the charts.  
-8 - Queue js: This project uses queue js to allow the data to load first.  
+1 - [HTML](https://html.com/): This project uses HTML as the skeleton of the website.  
+2 - [CSS](https://devdocs.io/css/): This project uses CSS to control the presentation of the website.  
+3 - [Bootstrap(3.3.7)](https://getbootstrap.com/docs/3.3/): This project uses Bootstrap as it's framework to make the site responsive.  
+4 - [JavaScript](https://developer.mozilla.org/bm/docs/Web/JavaScript): This project uses JavaScript to make the site interactive.  
+5 - [DC js](https://dc-js.github.io/dc.js/): This project uses dcjs to create the charts.  
+6 - [D3 js](https://d3js.org/): This project uses d3js to render each of the dynamic, interactive charts.  
+7 - [Crossfilter js](https://square.github.io/crossfilter/): This project uses crossfilter js to allow dynamic interaction between all the charts.  
+8 - [Queue js](http://code.iamkate.com/javascript/queues/): This project uses queue js to allow the data to load first.  
 
 
 # TESTING  
@@ -79,17 +79,17 @@ The reset all button was tested manually by filtering the data then clicking it,
 The site was tested on Chrome and Safari on multiple devices including iPhone 7, iPad, laptop and desktop. On mobile it was clear the original layout didn't work, there was a lot of overflow and it looked messy. 
 This was resolved by hiding the side bar and putting each of the pie charts on the own line and extending the container height. This new layout makes the website easy to use on mobile and tablet devices.
 
-HTML Code was put through [W3 HTML Validator](https://validator.w3.org/) which reported missing alt tags from both images and have both been added.
-CSS Code was put through W3 CSS Validator which reported no problems. - https://jigsaw.w3.org/css-validator/
-JS Code was put through Esprima: Syntax Validator with no reported problems. - https://esprima.org/demo/validate.html
+HTML Code was put through [W3 HTML Validator](https://validator.w3.org/) which reported missing alt tags from both images and have both been added.  
+CSS Code was put through [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) which reported no problems.  
+JS Code was put through [Esprima: Syntax Validator](https://esprima.org/demo/validate.html) with no reported problems.  
 
 
 # DEPLOYMENT
 The site is deployed directly from the master branch and is hosted using GitHub pages. The landing page is correctly named index.html in order for the site to work correctly.
 
 # CREDITS:   
-CONTENT - The data was taken from https://www.kaggle.com/karangadiya/fifa19. It has been edited slightly to remove blanks, typos and some of the rows. All content throughout the site was written by me.
+CONTENT - The data was taken from [here.](https://www.kaggle.com/karangadiya/fifa19) It has been edited slightly to remove blanks, typos and some of the rows. All content throughout the site was written by me.
 
-MEDIA - The image of Messi was taken from https://mundoalbiceleste.com/2018/09/24/lionel-messi-fifa-best-argentina-coach/
+MEDIA - The image of Messi was taken from [here](https://mundoalbiceleste.com/2018/09/24/lionel-messi-fifa-best-argentina-coach/)
 
-ACKNOWLEDGEMENTS - Border line was taken from http://jsfiddle.net/ZTz7Q/
+ACKNOWLEDGEMENTS - Border line was taken from [here](http://jsfiddle.net/ZTz7Q/)
