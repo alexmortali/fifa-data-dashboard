@@ -91,6 +91,7 @@ In the future I would like to add a pop up modal if a user has narrowed there se
 - CSS Code was put through [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) which reported no problems.  
 - JS Code was put through [Esprima: Syntax Validator](https://esprima.org/demo/validate.html) with no reported problems.  
 - The site was tested on Chrome and Safari on multiple devices including iPhone 7, iPad, laptop and desktop.  
+- When testing the filters on the sidebar it was clear the data was full of foreign characters for player names, these were showing up as question marks. This has been resolved now, however due to the size of the data there may be some left. This does not affect the functionality of the site.  
 
 ### Manual Tests
 #### SideBar  
